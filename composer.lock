@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6bf3c49b514ccac1825d544cf6272319",
+    "content-hash": "530abb02acba95b0ddedd4887e69f3f6",
     "packages": [
         {
             "name": "brick/math",
@@ -1088,6 +1088,46 @@
                 }
             ],
             "description": "Admin UI for Molitor packages.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/language",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/language",
+                "reference": "f7cd97b608f69c586b20928ec0089876fb213935"
+            },
+            "require": {
+                "istvanmolitor/user": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Language\\Providers\\LanguageServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Language\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Language",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -9868,6 +9908,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "istvanmolitor/admin": 20,
+        "istvanmolitor/language": 20,
         "istvanmolitor/media": 20,
         "istvanmolitor/user": 20
     },

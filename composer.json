@@ -52,11 +52,23 @@
         {
             "type": "vcs",
             "url": "git@github.com:istvanmolitor/media.git"
+        },
+        {
+            "type": "path",
+            "url": "./packages/language",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:istvanmolitor/language.git"
         }
     ],
     "require": {
         "php": "^8.3",
         "istvanmolitor/admin": "dev-main",
+        "istvanmolitor/language": "dev-main",
         "istvanmolitor/media": "dev-main",
         "istvanmolitor/menu": "^1.0",
         "istvanmolitor/user": "dev-main",

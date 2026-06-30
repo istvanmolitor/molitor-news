@@ -6,6 +6,7 @@ import App from './App.vue'
 import adminRoutes from '@admin/router/index'
 import userRoutes from '@user/router/index'
 import mediaRoutes from '@media/router/index'
+import languageRoutes from '@language/router/index'
 import { authGuard } from '@user/router/guards'
 
 const routes = [
@@ -13,6 +14,7 @@ const routes = [
     ...adminRoutes,
     ...userRoutes,
     ...mediaRoutes,
+    ...languageRoutes,
 ]
 
 const router = createRouter({

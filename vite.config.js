@@ -15,6 +15,7 @@ function resolveExternalDeps() {
         '@user': path.resolve(__dirname, 'resources/js/packages/vue-user'),
         '@menu': path.resolve(__dirname, 'resources/js/packages/ts-menu'),
         '@media': path.resolve(__dirname, 'resources/js/packages/vue-media'),
+        '@language': path.resolve(__dirname, 'resources/js/packages/vue-language'),
     };
 
     return {
@@ -69,6 +70,7 @@ export default defineConfig({
             '@user': path.resolve(__dirname, 'resources/js/packages/vue-user'),
             '@menu': path.resolve(__dirname, 'resources/js/packages/ts-menu'),
             '@media': path.resolve(__dirname, 'resources/js/packages/vue-media'),
+            '@language': path.resolve(__dirname, 'resources/js/packages/vue-language'),
         },
     },
     build: {
