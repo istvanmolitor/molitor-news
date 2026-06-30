@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b21090c812c297ae74e73ca7c6e265da",
+    "content-hash": "cf86ed7de4b24a9820bb96847ff3de95",
     "packages": [
         {
             "name": "brick/math",
@@ -1062,7 +1062,7 @@
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "../packages/admin",
+                "url": "./packages/admin",
                 "reference": "546840457bf6b1e7fe6dca83ba24269f566ee38b"
             },
             "type": "library",
@@ -1098,7 +1098,7 @@
             "version": "1.0.0",
             "dist": {
                 "type": "path",
-                "url": "../packages/menu",
+                "url": "./packages/menu",
                 "reference": "8c1967445f389a2f5502025797141b6f67f3c5f5"
             },
             "require-dev": {
@@ -1146,8 +1146,8 @@
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "../packages/user",
-                "reference": "282f006087634ae46858003b1a7cb2ca4a8135ae"
+                "url": "./packages/user",
+                "reference": "b85abe8df36ddc14c04322cbbda3098385eb6b35"
             },
             "require": {
                 "istvanmolitor/admin": "dev-main",

@@ -5,11 +5,12 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 @source '../**/*.vue';
-@source '../../../packages/vue-admin/**/*.vue';
-@source '../../../packages/vue-admin/**/*.ts';
-@source '../../../packages/vue-user/**/*.vue';
-@source '../../../packages/vue-user/**/*.ts';
-@source '../../../packages/ts-menu/**/*.ts';
+@source '../**/*.ts';
+@source '../js/packages/vue-admin/**/*.vue';
+@source '../js/packages/vue-admin/**/*.ts';
+@source '../js/packages/vue-user/**/*.vue';
+@source '../js/packages/vue-user/**/*.ts';
+@source '../js/packages/ts-menu/**/*.ts';
 
 @custom-variant dark (&:is(.dark *));
 

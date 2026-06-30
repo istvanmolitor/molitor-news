@@ -11,7 +11,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../packages/admin",
+            "url": "./packages/admin",
             "options": {
                 "symlink": true
             }
@@ -22,7 +22,7 @@
         },
         {
             "type": "path",
-            "url": "../packages/menu",
+            "url": "./packages/menu",
             "options": {
                 "symlink": true
             }
@@ -33,7 +33,7 @@
         },
         {
             "type": "path",
-            "url": "../packages/user",
+            "url": "./packages/user",
             "options": {
                 "symlink": true
             }
