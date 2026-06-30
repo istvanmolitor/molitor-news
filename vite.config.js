@@ -11,9 +11,9 @@ const nodeModules = path.resolve(__dirname, 'node_modules');
 
 function resolveExternalDeps() {
     const aliases = {
-        '@admin': path.resolve(__dirname, '../packages/vue-admin'),
-        '@user': path.resolve(__dirname, '../packages/vue-user'),
-        '@menu': path.resolve(__dirname, '../packages/ts-menu'),
+        '@admin': path.resolve(__dirname, 'resources/js/packages/vue-admin'),
+        '@user': path.resolve(__dirname, 'resources/js/packages/vue-user'),
+        '@menu': path.resolve(__dirname, 'resources/js/packages/ts-menu'),
     };
 
     return {
@@ -64,9 +64,9 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            '@admin': path.resolve(__dirname, '../packages/vue-admin'),
-            '@user': path.resolve(__dirname, '../packages/vue-user'),
-            '@menu': path.resolve(__dirname, '../packages/ts-menu'),
+            '@admin': path.resolve(__dirname, 'resources/js/packages/vue-admin'),
+            '@user': path.resolve(__dirname, 'resources/js/packages/vue-user'),
+            '@menu': path.resolve(__dirname, 'resources/js/packages/ts-menu'),
         },
     },
     build: {
