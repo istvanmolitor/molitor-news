@@ -5,12 +5,14 @@ import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import adminRoutes from '@admin/router/index'
 import userRoutes from '@user/router/index'
+import mediaRoutes from '@media/router/index'
 import { authGuard } from '@user/router/guards'
 
 const routes = [
     { path: '/', redirect: '/admin' },
     ...adminRoutes,
     ...userRoutes,
+    ...mediaRoutes,
 ]
 
 const router = createRouter({

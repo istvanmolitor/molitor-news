@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf86ed7de4b24a9820bb96847ff3de95",
+    "content-hash": "6bf3c49b514ccac1825d544cf6272319",
     "packages": [
         {
             "name": "brick/math",
@@ -1094,6 +1094,45 @@
             }
         },
         {
+            "name": "istvanmolitor/media",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/media",
+                "reference": "a9d096cb5ad6d73b97f11c10a1c5914d372aa2c5"
+            },
+            "require": {
+                "istvanmolitor/admin": "dev-main"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Media\\Providers\\MediaServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Media\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Media",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "istvanmolitor/menu",
             "version": "1.0.0",
             "dist": {
@@ -1147,7 +1186,7 @@
             "dist": {
                 "type": "path",
                 "url": "./packages/user",
-                "reference": "b85abe8df36ddc14c04322cbbda3098385eb6b35"
+                "reference": "be8e1fb10018246680b0e857c5af4572074c593a"
             },
             "require": {
                 "istvanmolitor/admin": "dev-main",
@@ -9829,6 +9868,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "istvanmolitor/admin": 20,
+        "istvanmolitor/media": 20,
         "istvanmolitor/user": 20
     },
     "prefer-stable": true,

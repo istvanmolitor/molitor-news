@@ -41,11 +41,23 @@
         {
             "type": "vcs",
             "url": "git@github.com:istvanmolitor/user.git"
+        },
+        {
+            "type": "path",
+            "url": "./packages/media",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:istvanmolitor/media.git"
         }
     ],
     "require": {
         "php": "^8.3",
         "istvanmolitor/admin": "dev-main",
+        "istvanmolitor/media": "dev-main",
         "istvanmolitor/menu": "^1.0",
         "istvanmolitor/user": "dev-main",
         "laravel/framework": "^13.8",

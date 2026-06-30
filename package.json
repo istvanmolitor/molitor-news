@@ -18,6 +18,7 @@
         "ts-menu": "file:./resources/js/packages/ts-menu",
         "vue": "^3.5.0",
         "vue-admin": "file:./resources/js/packages/vue-admin",
+        "vue-media": "file:./resources/js/packages/vue-media",
         "vue-router": "^5.1.0",
         "vue-user": "file:./resources/js/packages/vue-user"
     },

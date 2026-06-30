@@ -14,6 +14,7 @@ function resolveExternalDeps() {
         '@admin': path.resolve(__dirname, 'resources/js/packages/vue-admin'),
         '@user': path.resolve(__dirname, 'resources/js/packages/vue-user'),
         '@menu': path.resolve(__dirname, 'resources/js/packages/ts-menu'),
+        '@media': path.resolve(__dirname, 'resources/js/packages/vue-media'),
     };
 
     return {
@@ -67,6 +68,7 @@ export default defineConfig({
             '@admin': path.resolve(__dirname, 'resources/js/packages/vue-admin'),
             '@user': path.resolve(__dirname, 'resources/js/packages/vue-user'),
             '@menu': path.resolve(__dirname, 'resources/js/packages/ts-menu'),
+            '@media': path.resolve(__dirname, 'resources/js/packages/vue-media'),
         },
     },
     build: {
