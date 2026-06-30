@@ -46,11 +46,19 @@ commit_package() {
   if git -C "$dir" commit -m "$COMMIT_MSG"; then
     printf "  ${GREEN}✓ Commitolva (branch: $branch)${RESET}\n"
     committed=$((committed + 1))
+    if git -C "$dir" push; then
+      printf "  ${GREEN}✓ Pusholva${RESET}\n"
+    else
+      printf "  ${RED}✗ Push sikertelen${RESET}\n"
+      failed=$((failed + 1))
+    fi
   else
     printf "  ${RED}✗ Commit sikertelen${RESET}\n"
     failed=$((failed + 1))
   fi
 }
+
+commit_package "$SCRIPT_DIR"
 
 for base in "$SCRIPT_DIR/packages" "$SCRIPT_DIR/resources/js/packages"; do
   if [ ! -d "$base" ]; then
