@@ -26,6 +26,7 @@
         "vue-router": "^5.1.0",
         "vue-setting": "file:./resources/js/packages/vue-setting",
         "vue-theme": "file:./resources/js/packages/vue-theme",
+        "vue-rss-watcher": "file:./resources/js/packages/vue-rss-watcher",
         "vue-user": "file:./resources/js/packages/vue-user"
     },
     "devDependencies": {

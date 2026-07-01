@@ -11,6 +11,7 @@ import themeRoutes from '@theme/router/index'
 import settingRoutes from '@setting/router/index'
 import cmsRoutes from '@cms/router/index'
 import keywordRoutes from '@keyword/router/index'
+import { router as rssWatcherRoutes } from 'vue-rss-watcher'
 import { authGuard } from '@user/router/guards'
 
 const routes = [
@@ -23,6 +24,7 @@ const routes = [
     ...settingRoutes,
     ...cmsRoutes,
     ...keywordRoutes,
+    ...rssWatcherRoutes,
 ]
 
 const router = createRouter({

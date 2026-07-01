@@ -118,6 +118,17 @@
         {
             "type": "vcs",
             "url": "git@github.com:istvanmolitor/search.git"
+        },
+        {
+            "type": "path",
+            "url": "./packages/rss-watcher",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:istvanmolitor/rss-watcher.git"
         }
     ],
     "require": {
@@ -128,6 +139,7 @@
         "istvanmolitor/language": "dev-main",
         "istvanmolitor/media": "dev-main",
         "istvanmolitor/menu": "^1.0",
+        "istvanmolitor/rss-watcher": "dev-main",
         "istvanmolitor/search": "dev-main",
         "istvanmolitor/setting": "dev-main",
         "istvanmolitor/theme": "dev-main",
