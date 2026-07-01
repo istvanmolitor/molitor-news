@@ -129,6 +129,28 @@
         {
             "type": "vcs",
             "url": "git@github.com:istvanmolitor/rss-watcher.git"
+        },
+        {
+            "type": "path",
+            "url": "./packages/html-parser",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:istvanmolitor/html-parser.git"
+        },
+        {
+            "type": "path",
+            "url": "./packages/article-parser",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:istvanmolitor/article-parser.git"
         }
     ],
     "require": {
@@ -139,6 +161,8 @@
         "istvanmolitor/language": "dev-main",
         "istvanmolitor/media": "dev-main",
         "istvanmolitor/menu": "^1.0",
+        "istvanmolitor/article-parser": "dev-main",
+        "istvanmolitor/html-parser": "dev-main",
         "istvanmolitor/rss-watcher": "dev-main",
         "istvanmolitor/search": "dev-main",
         "istvanmolitor/setting": "dev-main",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2b86cf9f4ef4569839c6f68d63c6e37",
+    "content-hash": "37148377c6e03114d263f0be54bbf846",
     "packages": [
         {
             "name": "brick/math",
@@ -1094,6 +1094,42 @@
             }
         },
         {
+            "name": "istvanmolitor/article-parser",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/article-parser",
+                "reference": "dbc2f2c469b51b4f524ef30d24da0833d377e1e8"
+            },
+            "require": {
+                "istvanmolitor/html-parser": "@dev",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "10.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\ArticleParser\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Article parser",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "istvanmolitor/cms",
             "version": "dev-main",
             "dist": {
@@ -1130,6 +1166,41 @@
                 }
             ],
             "description": "CMS package.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/html-parser",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/html-parser",
+                "reference": "19431f5a360dd2e9069351abc686189a176c46d5"
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "10.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\HtmlParser\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "HTML Parser",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -1304,7 +1375,7 @@
             "dist": {
                 "type": "path",
                 "url": "./packages/rss-watcher",
-                "reference": "79a761bab9d7f6dc68ca6f93ab1009e1c9e12b98"
+                "reference": "0950276414569ca678f3a6f1c785c1e38ff8a83c"
             },
             "require": {
                 "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
@@ -10219,7 +10290,9 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "istvanmolitor/admin": 20,
+        "istvanmolitor/article-parser": 20,
         "istvanmolitor/cms": 20,
+        "istvanmolitor/html-parser": 20,
         "istvanmolitor/keyword": 20,
         "istvanmolitor/language": 20,
         "istvanmolitor/media": 20,
