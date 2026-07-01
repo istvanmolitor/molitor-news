@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "37148377c6e03114d263f0be54bbf846",
+    "content-hash": "d328155b994754c611e2d2826497f052",
     "packages": [
         {
             "name": "brick/math",
@@ -1124,6 +1124,41 @@
                 }
             ],
             "description": "Article parser",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/article-scraper",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/article-scraper",
+                "reference": "239efffe62d02fde2b8d27ed1b7eadc206bec6f5"
+            },
+            "require": {
+                "istvanmolitor/article-parser": "dev-main",
+                "laravel/framework": "^12.0|^13.0",
+                "php": "^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "IstvanMolitor\\ArticleScraper\\ArticleScraperServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "IstvanMolitor\\ArticleScraper\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Article scraper package for Laravel",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -10291,6 +10326,7 @@
     "stability-flags": {
         "istvanmolitor/admin": 20,
         "istvanmolitor/article-parser": 20,
+        "istvanmolitor/article-scraper": 20,
         "istvanmolitor/cms": 20,
         "istvanmolitor/html-parser": 20,
         "istvanmolitor/keyword": 20,

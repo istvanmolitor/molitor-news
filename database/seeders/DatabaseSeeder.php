@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use IstvanMolitor\ArticleScraper\database\seeders\ArticleScraperSeeder;
 use Molitor\Cms\Database\Seeders\CmsSeeder;
 use Molitor\RssWatcher\database\seeders\NewsRssSeeder;
 use Molitor\Keyword\Database\Seeders\KeywordSeeder;
@@ -31,6 +32,7 @@ class DatabaseSeeder extends Seeder
             KeywordSeeder::class,
             CmsSeeder::class,
             NewsRssSeeder::class,
+            ArticleScraperSeeder::class,
         ]);
     }
 }

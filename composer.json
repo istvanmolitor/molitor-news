@@ -151,6 +151,17 @@
         {
             "type": "vcs",
             "url": "git@github.com:istvanmolitor/article-parser.git"
+        },
+        {
+            "type": "path",
+            "url": "./packages/article-scraper",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:istvanmolitor/article-scraper.git"
         }
     ],
     "require": {
@@ -162,6 +173,7 @@
         "istvanmolitor/media": "dev-main",
         "istvanmolitor/menu": "^1.0",
         "istvanmolitor/article-parser": "dev-main",
+        "istvanmolitor/article-scraper": "dev-main",
         "istvanmolitor/html-parser": "dev-main",
         "istvanmolitor/rss-watcher": "dev-main",
         "istvanmolitor/search": "dev-main",
