@@ -107,6 +107,17 @@
         {
             "type": "vcs",
             "url": "git@github.com:istvanmolitor/cms.git"
+        },
+        {
+            "type": "path",
+            "url": "./packages/search",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:istvanmolitor/search.git"
         }
     ],
     "require": {
@@ -117,6 +128,7 @@
         "istvanmolitor/language": "dev-main",
         "istvanmolitor/media": "dev-main",
         "istvanmolitor/menu": "^1.0",
+        "istvanmolitor/search": "dev-main",
         "istvanmolitor/setting": "dev-main",
         "istvanmolitor/theme": "dev-main",
         "istvanmolitor/user": "dev-main",

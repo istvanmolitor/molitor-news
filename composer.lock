@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8aa86257df1e46f2938f056f327a465",
+    "content-hash": "1e02e207d4747f4fc56558219c18d1ad",
     "packages": [
         {
             "name": "brick/math",
@@ -1177,7 +1177,7 @@
             "dist": {
                 "type": "path",
                 "url": "./packages/language",
-                "reference": "f7cd97b608f69c586b20928ec0089876fb213935"
+                "reference": "9cddc65d10453425b35eda88e6362791b722ea48"
             },
             "require": {
                 "istvanmolitor/user": "*@dev"
@@ -1293,6 +1293,42 @@
                 }
             ],
             "description": "Menu",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/search",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/search",
+                "reference": "452002931f03cc837e346515c8bd9a4d7138564f"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Search\\Providers\\SearchServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Search\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Search package.",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -10071,6 +10107,7 @@
         "istvanmolitor/keyword": 20,
         "istvanmolitor/language": 20,
         "istvanmolitor/media": 20,
+        "istvanmolitor/search": 20,
         "istvanmolitor/setting": 20,
         "istvanmolitor/theme": 20,
         "istvanmolitor/user": 20

@@ -86,6 +86,7 @@ export default defineConfig({
         rolldownOptions: {
             onLog(level, log, handler) {
                 if (log.code === 'INVALID_ANNOTATION') return;
+                if (log.code === 'INEFFECTIVE_DYNAMIC_IMPORT') return;
                 handler(level, log);
             },
             output: {
