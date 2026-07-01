@@ -11,6 +11,8 @@
 @source '../js/packages/vue-user/**/*.vue';
 @source '../js/packages/vue-user/**/*.ts';
 @source '../js/packages/ts-menu/**/*.ts';
+@source '../js/packages/vue-cms/**/*.vue';
+@source '../js/packages/vue-cms/**/*.ts';
 
 @custom-variant dark (&:is(.dark *));
 
