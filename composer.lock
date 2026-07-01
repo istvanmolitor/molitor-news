@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "530abb02acba95b0ddedd4887e69f3f6",
+    "content-hash": "c8aa86257df1e46f2938f056f327a465",
     "packages": [
         {
             "name": "brick/math",
@@ -1094,6 +1094,84 @@
             }
         },
         {
+            "name": "istvanmolitor/cms",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/cms",
+                "reference": "c8927e2827eea225adedddc2849bd8e026f88455"
+            },
+            "require": {
+                "istvanmolitor/language": "*@dev",
+                "istvanmolitor/menu": "*@dev",
+                "istvanmolitor/user": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Cms\\Providers\\CmsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Cms\\": "src/",
+                    "Molitor\\Cms\\Database\\Seeders\\": "src/Database/Seeders/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "CMS package.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/keyword",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/keyword",
+                "reference": "2f77b9a161353a474fc6a5ed48ea2356381c95d6"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Keyword\\Providers\\KeywordServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Keyword\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Keyword management package for Laravel",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "istvanmolitor/language",
             "version": "dev-main",
             "dist": {
@@ -1215,6 +1293,87 @@
                 }
             ],
             "description": "Menu",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/setting",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/setting",
+                "reference": "9b2f146534e26e150f4221bbf0fc5a1829aa17ce"
+            },
+            "require": {
+                "istvanmolitor/user": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Setting\\Providers\\SettingServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Setting\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Setting",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/theme",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/theme",
+                "reference": "6b67b51faf5aceb9acf02e86be84f300121be2b0"
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Theme\\Providers\\ThemeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Theme\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Theme package",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -9908,8 +10067,12 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "istvanmolitor/admin": 20,
+        "istvanmolitor/cms": 20,
+        "istvanmolitor/keyword": 20,
         "istvanmolitor/language": 20,
         "istvanmolitor/media": 20,
+        "istvanmolitor/setting": 20,
+        "istvanmolitor/theme": 20,
         "istvanmolitor/user": 20
     },
     "prefer-stable": true,

@@ -63,14 +63,62 @@
         {
             "type": "vcs",
             "url": "git@github.com:istvanmolitor/language.git"
+        },
+        {
+            "type": "path",
+            "url": "./packages/keyword",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:istvanmolitor/keyword.git"
+        },
+        {
+            "type": "path",
+            "url": "./packages/theme",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:istvanmolitor/theme.git"
+        },
+        {
+            "type": "path",
+            "url": "./packages/setting",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:istvanmolitor/setting.git"
+        },
+        {
+            "type": "path",
+            "url": "./packages/cms",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:istvanmolitor/cms.git"
         }
     ],
     "require": {
         "php": "^8.3",
         "istvanmolitor/admin": "dev-main",
+        "istvanmolitor/cms": "dev-main",
+        "istvanmolitor/keyword": "dev-main",
         "istvanmolitor/language": "dev-main",
         "istvanmolitor/media": "dev-main",
         "istvanmolitor/menu": "^1.0",
+        "istvanmolitor/setting": "dev-main",
+        "istvanmolitor/theme": "dev-main",
         "istvanmolitor/user": "dev-main",
         "laravel/framework": "^13.8",
         "laravel/tinker": "^3.0"

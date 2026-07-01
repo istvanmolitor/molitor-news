@@ -2,11 +2,14 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Molitor\Cms\Database\Seeders\CmsSeeder;
+use Molitor\Keyword\Database\Seeders\KeywordSeeder;
 use Molitor\Language\Database\Seeders\LanguageSeeder;
 use Molitor\Media\Database\Seeders\MediaSeeder;
+use Molitor\Setting\database\seeders\SettingSeeder;
+use Molitor\Theme\database\seeders\ThemeSeeder;
 use Molitor\User\Database\Seeders\UserSeeder;
 
 class DatabaseSeeder extends Seeder
@@ -22,6 +25,10 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             MediaSeeder::class,
             LanguageSeeder::class,
+            ThemeSeeder::class,
+            SettingSeeder::class,
+            KeywordSeeder::class,
+            CmsSeeder::class,
         ]);
     }
 }

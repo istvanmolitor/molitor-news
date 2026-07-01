@@ -7,6 +7,10 @@ import adminRoutes from '@admin/router/index'
 import userRoutes from '@user/router/index'
 import mediaRoutes from '@media/router/index'
 import languageRoutes from '@language/router/index'
+import themeRoutes from '@theme/router/index'
+import settingRoutes from '@setting/router/index'
+import cmsRoutes from '@cms/router/index'
+import keywordRoutes from '@keyword/router/index'
 import { authGuard } from '@user/router/guards'
 
 const routes = [
@@ -15,6 +19,10 @@ const routes = [
     ...userRoutes,
     ...mediaRoutes,
     ...languageRoutes,
+    ...themeRoutes,
+    ...settingRoutes,
+    ...cmsRoutes,
+    ...keywordRoutes,
 ]
 
 const router = createRouter({

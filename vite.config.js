@@ -16,6 +16,10 @@ function resolveExternalDeps() {
         '@menu': path.resolve(__dirname, 'resources/js/packages/ts-menu'),
         '@media': path.resolve(__dirname, 'resources/js/packages/vue-media'),
         '@language': path.resolve(__dirname, 'resources/js/packages/vue-language'),
+        '@theme': path.resolve(__dirname, 'resources/js/packages/vue-theme'),
+        '@setting': path.resolve(__dirname, 'resources/js/packages/vue-setting'),
+        '@cms': path.resolve(__dirname, 'resources/js/packages/vue-cms'),
+        '@keyword': path.resolve(__dirname, 'resources/js/packages/vue-keyword'),
     };
 
     return {
@@ -71,6 +75,10 @@ export default defineConfig({
             '@menu': path.resolve(__dirname, 'resources/js/packages/ts-menu'),
             '@media': path.resolve(__dirname, 'resources/js/packages/vue-media'),
             '@language': path.resolve(__dirname, 'resources/js/packages/vue-language'),
+            '@theme': path.resolve(__dirname, 'resources/js/packages/vue-theme'),
+            '@setting': path.resolve(__dirname, 'resources/js/packages/vue-setting'),
+            '@cms': path.resolve(__dirname, 'resources/js/packages/vue-cms'),
+            '@keyword': path.resolve(__dirname, 'resources/js/packages/vue-keyword'),
         },
     },
     build: {
