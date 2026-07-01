@@ -12,6 +12,7 @@ import settingRoutes from '@setting/router/index'
 import cmsRoutes from '@cms/router/index'
 import keywordRoutes from '@keyword/router/index'
 import { router as rssWatcherRoutes } from 'vue-rss-watcher'
+import articleScraperRoutes from '@article-scraper/router/index'
 import { authGuard } from '@user/router/guards'
 
 const routes = [
@@ -25,6 +26,7 @@ const routes = [
     ...cmsRoutes,
     ...keywordRoutes,
     ...rssWatcherRoutes,
+    ...articleScraperRoutes,
 ]
 
 const router = createRouter({

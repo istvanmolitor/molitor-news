@@ -20,6 +20,7 @@ function resolveExternalDeps() {
         '@setting': path.resolve(__dirname, 'resources/js/packages/vue-setting'),
         '@cms': path.resolve(__dirname, 'resources/js/packages/vue-cms'),
         '@keyword': path.resolve(__dirname, 'resources/js/packages/vue-keyword'),
+        '@article-scraper': path.resolve(__dirname, 'resources/js/packages/vue-article-scraper'),
     };
 
     return {
@@ -79,6 +80,7 @@ export default defineConfig({
             '@setting': path.resolve(__dirname, 'resources/js/packages/vue-setting'),
             '@cms': path.resolve(__dirname, 'resources/js/packages/vue-cms'),
             '@keyword': path.resolve(__dirname, 'resources/js/packages/vue-keyword'),
+            '@article-scraper': path.resolve(__dirname, 'resources/js/packages/vue-article-scraper'),
         },
     },
     build: {
