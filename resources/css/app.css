@@ -13,6 +13,8 @@
 @source '../js/packages/ts-menu/**/*.ts';
 @source '../js/packages/vue-cms/**/*.vue';
 @source '../js/packages/vue-cms/**/*.ts';
+@source '../js/packages/vue-theme/**/*.vue';
+@source '../js/packages/vue-theme/**/*.ts';
 
 @custom-variant dark (&:is(.dark *));
 
